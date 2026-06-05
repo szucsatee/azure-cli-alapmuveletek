@@ -4,8 +4,8 @@ Ebben a feladatban az Azure CLI-t kell használnod.
 
 
 **Jelentkezz be azure előfizetésedbe az Azure CLI segítségével**
-	az login --tenant TENANT_ID
-	az login --tenant xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx
+	az login --tenant TENANT_ID 
+	az login --tenant xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx
 
 	Kérdést vet fel:
 	Hány előfizetésem van?
