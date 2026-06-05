@@ -1,0 +1,1 @@
+# azure-cli-alapm-veletek-megismer-s-s-haszn-lata
