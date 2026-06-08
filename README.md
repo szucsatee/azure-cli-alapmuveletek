@@ -1,15 +1,42 @@
 Azure CLI alapműveletek megismerése és használata
 
-Ebben a feladatban az Azure CLI-t kell használnod.
+ 
+
+Az Azure elsőszámú, platform független parancssori eszköze.
+
+Minden platfomon futtatható: Windows, MacOS, Linux, Unix, Docker
 
 
-Jelentkezz be azure előfizetésedbe az Azure CLI segítségével
+Az Azure CLI telepítéséről itt tudhatsz meg többet:
+
+	https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli?view=azure-cli-latest
+
+Windowsra telepítem:
+
+	https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli-windows?view=azure-cli-latest&tabs=azure-cli&pivots=msi
+
+macOS-re telepítem:
+
+	https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli-macos?view=azure-cli-latest
+
+
+Ubuntu, Linux-ra telepíteném:
+
+	https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli-linux?view=azure-cli-latest&pivots=apt
+
+
+
+
+
+
+
+A telepítés után jelentkezzünk be az Azure előfizetésünkbe az alábbi módon:
 	
 	az login --tenant TENANT_ID 
 	az login --tenant xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx
 
 
-	Kérdést vet fel:
+Kérdést vet fel:
 Hány előfizetésem van?
 
 		az account list -o table
