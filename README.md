@@ -25,15 +25,27 @@ Ubuntu, Linux-ra telepíteném:
 	https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli-linux?view=azure-cli-latest&pivots=apt
 
 
+Tlepítés után az Azure verziót így ellenőrízhetjük:
+
+	az version
+vagy
+
+	az -v
 
 
+Kapcsolódás az Azure Tenant-hoz:
 
-
-
-A telepítés után jelentkezzünk be az Azure előfizetésünkbe az alábbi módon:
+Jelentkezzünk be az Azure előfizetésünkbe az alábbi módon:
 	
 	az login --tenant TENANT_ID 
 	az login --tenant xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx
+
+
+
+
+
+
+
 
 
 Kérdést vet fel:
