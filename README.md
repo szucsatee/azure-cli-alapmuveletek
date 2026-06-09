@@ -43,26 +43,26 @@ Jelentkezzünk be az Azure előfizetésünkbe az alábbi módon:
 
 
 
-
-
-
-
-
-Kérdést vet fel:
-Hány előfizetésem van?
+Az előfizetéseid az alábbi módon tudod ellenőrízni:
 
 		az account list -o table
 
-	Melyiket is használjuk? - Is Default - True
+A jelenleg használatban lévőt a:
 
-Ha váltani szeretnénk elöfizetések közöttr:
-	- subsription ID-ra hivatkozunk
+	Is Default oszlop - True értéke jelöli
+
 	
+
+Ha a nem megfelelő előfizetést használod, az alábbi módon tudsz váltani az előfizetések között:
+
+ 	subsription ID-ra hivatkozunk
 		az account set -s 'xxxx-xxxx-xxxx-xxxx'
 
-Melyik elofizetest is használjuk?
+Előfizetésem ellenőrzését így végezheted el:
 
 		az account show --output table
+
+
 
 
  **Hozz létre egy új erőforráscsoportot az Azure CLI segítségével**
