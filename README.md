@@ -1,4 +1,4 @@
-Azure CLI alapműveletek megismerése és használata
+# *Azure CLI alapműveletek megismerése és használata*
 
  
 
@@ -7,25 +7,25 @@ Az Azure elsőszámú, platform független parancssori eszköze.
 Minden platfomon futtatható: Windows, MacOS, Linux, Unix, Docker
 
 
-Az Azure CLI telepítéséről itt tudhatsz meg többet:
+## Az Azure CLI telepítéséről itt tudhatsz meg többet:
 
 	https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli?view=azure-cli-latest
 
-Windowsra telepítem:
+### Windowsra telepítem:
 
 	https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli-windows?view=azure-cli-latest&tabs=azure-cli&pivots=msi
 
-macOS-re telepítem:
+### macOS-re telepítem:
 
 	https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli-macos?view=azure-cli-latest
 
 
-Ubuntu, Linux-ra telepíteném:
+### Ubuntu, Linux-ra telepíteném:
 
 	https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli-linux?view=azure-cli-latest&pivots=apt
 
 
-Tlepítés után az Azure verziót így ellenőrízhetjük:
+## Telepítés után az Azure verziót így ellenőrízhetjük:
 
 	az version
 vagy
@@ -33,7 +33,7 @@ vagy
 	az -v
 
 
-Kapcsolódás az Azure Tenant-hoz:
+## Kapcsolódás az Azure Tenant-hoz:
 
 Jelentkezzünk be az Azure előfizetésünkbe az alábbi módon:
 	
@@ -65,7 +65,7 @@ Előfizetésem ellenőrzését így végezheted el:
 
 
 
- **Hozz létre egy új erőforráscsoportot az Azure CLI segítségével**
+ ** Hozz létre egy új erőforráscsoportot az Azure CLI segítségével **
 	Két kérdés:
 1. Milyen eddigi eroforráscsoportjaim vannak:
 	
