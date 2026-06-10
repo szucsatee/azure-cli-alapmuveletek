@@ -9,7 +9,7 @@ Minden platfomon futtatható: Windows, MacOS, Linux, Unix, Docker
 
 ## Az Azure CLI telepítéséről itt tudhatsz meg többet:
 
-	https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli?view=azure-cli-latest
+[![Az Azure Command-Line Interface (CLI) dokumentációja](https://learn.microsoft.com/hu-hu/cli/azure/)
 
 ### Windowsra telepítem:
 
