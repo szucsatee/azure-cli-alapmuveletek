@@ -1,28 +1,19 @@
 # *Azure CLI alapműveletek megismerése és használata*
 
  
+Ez a repository az Azure CLI alapvető használatát és legfontosabb parancsait mutatja be.
 
 Az Azure elsőszámú, platform független parancssori eszköze.
 
-Minden platfomon futtatható: Windows, MacOS, Linux, Unix, Docker
+
+## 🚀 Támogatott platformok
+Windows, macOS, Linux/Unix és Docker.
 
 
-## Az Azure CLI telepítéséről itt tudhatsz meg többet:
+## 📥 Az Azure CLI telepítéséről itt tudhatsz meg többet:
 
-[![Az Azure Command-Line Interface (CLI) dokumentációja](https://learn.microsoft.com/hu-hu/cli/azure/)
+Részletes útmutatók a [Microsoft Learn](https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli?view=azure-cli-latest) oldalán érhetőek el.
 
-### Windowsra telepítem:
-
-	https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli-windows?view=azure-cli-latest&tabs=azure-cli&pivots=msi
-
-### macOS-re telepítem:
-
-	https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli-macos?view=azure-cli-latest
-
-
-### Ubuntu, Linux-ra telepíteném:
-
-	https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli-linux?view=azure-cli-latest&pivots=apt
 
 
 ## Telepítés után az Azure verziót így ellenőrízhetjük:
@@ -32,7 +23,7 @@ vagy
 
 	az -v
 
-
+---
 ## Kapcsolódás az Azure Tenant-hoz:
 
 Jelentkezzünk be az Azure előfizetésünkbe az alábbi módon:
@@ -65,8 +56,8 @@ Előfizetésem ellenőrzését így végezheted el:
 
 
 
- ** Hozz létre egy új erőforráscsoportot az Azure CLI segítségével **
-	Két kérdés:
+ ## Hozz létre egy új erőforráscsoportot az Azure CLI segítségével **
+
 1. Milyen eddigi eroforráscsoportjaim vannak:
 	
 		az group list --output table
