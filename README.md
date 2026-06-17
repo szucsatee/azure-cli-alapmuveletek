@@ -1,43 +1,45 @@
-# Azure CLI alapműveletek megismerése és használata
+# ☁️ Azure CLI Alapműveletek
 
-[![Azure CLI](https://shields.io)](https://learn.microsoft.com/hu-hu/cli/azure/)
-
-Ez a repository az Azure CLI alapvető használatát és legfontosabb parancsait mutatja be.
-
-## 🚀 Támogatott platformok
-Windows, macOS, Linux/Unix és Docker.
+Ez a dokumentáció az **Azure CLI** alapvető használatát, környezeti beállításait és a legfontosabb felhőalapú parancsokat mutatja be.
 
 ---
 
-## 📥 Telepítési útmutatók
-Részletes útmutatók a [Microsoft Learn](https://learn.microsoft.com/hu-hu/cli/azure/install-azure-cli?view=azure-cli-latest) oldalán érhetőek el.
-Telepítés után verzióellenőrzés:
+## 🔑 Első lépések & Hitelesítés
+
+*   **Verzió ellenőrzése:** `az version` vagy `az -v`
+*   **Bejelentkezés:** `az login --tenant "TenantID"`
+*   **Előfizetések listázása:** `az account list -o table`
+*   **Előfizetés váltása:** `az account set -s ' "SubscriptionID"'`
+
+---
+
+## 📂 Erőforráscsoportok (Resource Groups)
+
+*   **Meglévők istázás:** `az group list --output table`
+*   **Létrehozás:** `az group create --name "EROFORRASCSOPORT_NEVE" --location "pl: swedencentral"`
+
+---
+
+## 📦 Tárfiók (Storage Account) és Tároló (Container)
+
 ```bash
-az version
+# Tárfiók létrehozása
+az storage account create --name "TARFIok_NEVE" --resource-group "EROFORRASCSOPORT_NEVE" --location swedencentral" --sku Standard_LRS
+```
+```bash
+# Tároló létrehozása
+az storage container create --name "TARFIok_NEVE" --account-name "TAROLO_NEVE"
 ```
 
 ---
 
-## 🔐 Hitelesítés és Előfizetések
-*   **Bejelentkezés:** `az login --tenant TENANT_ID`
-*   **Előfizetések listázása:** `az account list -o table`
-*   **Váltás előfizetésre:** `az account set -s 'SUBSCRIPTION_ID'`
-*   **Aktuális fiók:** `az account show --output table`
+## 💾 Blob fájlműveletek (Feltöltés, Letöltés, Törlés)
 
----
-
-## 🏗️ Erőforráscsoportok (Resource Groups)
-*   **Lista:** `az group list --output table`
-*   **Létrehozás:** `az group create --name <név> --location <régió>`
-
----
-
-## 📦 Tárfiók és Tárolók (Storage Account & Containers)
-*   **Tárfiók létrehozása:**
-    ```bash
-    az storage account create --name <tárfiók_neve> --resource-group <rg_neve> --location <régió> --sku <típus>
-    ```
-*   **Tároló létrehozása:** `az storage container create --name <név> --account-name <tárfiók>`
-*   **Fájl feltöltése:** `az storage blob upload --container-name <tároló> --account-name <tárfiók> --name <fájlnév> --file <helyi_útvonal>`
-*   **Listázás:** `az storage blob list --container-name <tároló> --account-name <tárfiók> --output table`
-*   **Törlés:** `az storage blob delete --container-name <tároló> --account-name <tárfiók> --name <fájlnév>`
+*   **Feltöltés:**
+*       `az storage blob upload --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --name "DOKUMENTUM" --file "helyi_elérési_út" --auth-mode login`
+*   **Listázás:**
+*       `az storage blob list --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --output table`
+*   **Letöltés:**
+*       `az storage blob download --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --name "DOKUMENTUM" --file "helyi_cél"`
+*   **Törlés:**
+*       `az storage blob delete --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --name "DOKUMENTUM"`
