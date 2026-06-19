@@ -22,12 +22,12 @@ Ez a dokumentáció az **Azure CLI** alapvető használatát, környezeti beáll
 
 ## 📦 Tárfiók (Storage Account) és Tároló (Container)
 
-```bash
 # Tárfiók létrehozása
+```bash
 az storage account create --name "TARFIok_NEVE" --resource-group "EROFORRASCSOPORT_NEVE" --location swedencentral" --sku Standard_LRS
 ```
-```bash
 # Tároló létrehozása
+```bash
 az storage container create --name "TARFIok_NEVE" --account-name "TAROLO_NEVE"
 ```
 
