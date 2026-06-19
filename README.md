@@ -28,7 +28,7 @@ az storage account create --name "TARFIok_NEVE" --resource-group "EROFORRASCSOPO
 ```
 # Tároló létrehozása
 ```bash
-az storage container create --name "TARFIok_NEVE" --account-name "TAROLO_NEVE"
+az storage container create --name "TAROLO_NEVE" --account-name "TARFIok_NEVE"
 ```
 
 ---
