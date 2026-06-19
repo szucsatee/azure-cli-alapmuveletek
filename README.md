@@ -26,6 +26,11 @@ Ez a dokumentáció az **Azure CLI** alapvető használatát, környezeti beáll
 ```bash
 az storage account create --name "TARFIok_NEVE" --resource-group "EROFORRASCSOPORT_NEVE" --location "pl:swedencentral" --sku Standard_LRS
 ```
+
+## Tárfiókok listázása
+```bash
+az storage account list --query "[].name" --output table
+
 # Tároló létrehozása
 ```bash
 az storage container create --name "TAROLO_NEVE" --account-name "TARFIok_NEVE"
