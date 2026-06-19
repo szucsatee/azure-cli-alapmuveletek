@@ -30,6 +30,7 @@ az storage account create --name "TARFIok_NEVE" --resource-group "EROFORRASCSOPO
 ## Tárfiókok listázása
 ```bash
 az storage account list --query "[].name" --output table
+```
 
 # Tároló létrehozása
 ```bash
