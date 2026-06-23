@@ -9,7 +9,7 @@ Ez a dokumentáció az **Azure CLI** alapvető használatát, környezeti beáll
 *   **Verzió ellenőrzése:** `az version` vagy `az -v`
 *   **Bejelentkezés:** `az login --tenant "TenantID"`
 *   **Előfizetések listázása:** `az account list -o table`
-*   **Előfizetés váltása:** `az account set -s ' "SubscriptionID"'`
+*   **Előfizetés váltása:** `az account set -s "SubscriptionID"' `
 
 ---
 
