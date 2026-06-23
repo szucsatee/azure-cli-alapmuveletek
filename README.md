@@ -16,7 +16,7 @@ Ez a dokumentáció az **Azure CLI** alapvető használatát, környezeti beáll
 ## 📂 Erőforráscsoportok (Resource Groups)
 
 *   **Meglévők istázás:** `az group list --output table`
-*   **Létrehozás:** `az group create --name "EROFORRASCSOPORT_NEVE" --location "pl: swedencentral"`
+*   **Létrehozás:** `az group create --name "EROFORRASCSOPORT_NEVE" --location "pl: swedencentral"`  
 
 ---
 
