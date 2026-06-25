@@ -7,6 +7,8 @@ A dokumentáció az **Azure CLI** alapvető használatát, környezeti beállít
 ## 🔑 Első lépések:
 
 *   **Verzió ellenőrzését így tudod elvégezni:** `az version` vagy `az -v`
+*   <img width="805" height="198" alt="image" src="https://github.com/user-attachments/assets/f8ce7e35-064a-43b6-9f83-8ad25e781435" />
+
 *   **Bejelentkezéshez használd ezt:** `az login --tenant "TenantID"`
 *   **Előfizetéseid listázását így csináld:** `az account list -o table`
 *   **Előfizetés váltásához:** `az account set -s "SubscriptionID"' `
