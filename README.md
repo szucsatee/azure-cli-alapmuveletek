@@ -1,38 +1,38 @@
 # ☁️ Azure CLI Alapműveletek
 
-Ez a dokumentáció az **Azure CLI** alapvető használatát, környezeti beállításait és a legfontosabb felhőalapú parancsokat mutatja be.
+A dokumentáció az **Azure CLI** alapvető használatát, környezeti beállításait és a legfontosabb felhőalapú parancsokat mutatja be, írja le.
 
 ---
 
-## 🔑 Első lépések & Hitelesítés
+## 🔑 Első lépések:
 
-*   **Verzió ellenőrzése:** `az version` vagy `az -v`
-*   **Bejelentkezés:** `az login --tenant "TenantID"`
-*   **Előfizetések listázása:** `az account list -o table`
-*   **Előfizetés váltása:** `az account set -s "SubscriptionID"' `
+*   **Verzió ellenőrzését így tudod elvégezni:** `az version` vagy `az -v`
+*   **Bejelentkezéshez használd ezt:** `az login --tenant "TenantID"`
+*   **Előfizetéseid listázását így csináld:** `az account list -o table`
+*   **Előfizetés váltásához:** `az account set -s "SubscriptionID"' `
 
 ---
 
 ## 📂 Erőforráscsoportok (Resource Groups)
 
-*   **Meglévők istázás:** `az group list --output table`
-*   **Létrehozás:** `az group create --name "EROFORRASCSOPORT_NEVE" --location "pl: swedencentral"`  
+*   **Meglévő erőforráscsoportok listázása:** `az group list --output table`
+*   **Új erőforráscsoport létrehozása:** `az group create --name "EROFORRASCSOPORT_NEVE" --location "pl: swedencentral"`  
 
 ---
 
 ## 📦 Tárfiók (Storage Account) és Tároló (Container)
 
-# Tárfiók létrehozása
+# Új tárfiók létrehozás
 ```bash
 az storage account create --name "TARFIok_NEVE" --resource-group "EROFORRASCSOPORT_NEVE" --location "pl:swedencentral" --sku Standard_LRS
 ```
 
-## Tárfiókok listázása
+## Tárfiókjaid listázása
 ```bash
 az storage account list --query "[].name" --output table
 ```
 
-# Tároló létrehozása
+# Új tároló létrehozása
 ```bash
 az storage container create --name "TAROLO_NEVE" --account-name "TARFIok_NEVE"
 ```
@@ -41,11 +41,11 @@ az storage container create --name "TAROLO_NEVE" --account-name "TARFIok_NEVE"
 
 ## 💾 Blob fájlműveletek (Feltöltés, Letöltés, Törlés)
 
-*   **Feltöltés:**
+*   **Új elem feltöltése:**
 *       `az storage blob upload --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --name "DOKUMENTUM" --file "helyi_elérési_út" --auth-mode login`
-*   **Listázás:**
+*   **Elemek listázása:**
 *       `az storage blob list --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --output table`
-*   **Letöltés:**
+*   **Letöltése:**
 *       `az storage blob download --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --name "DOKUMENTUM" --file "helyi_cél"`
-*   **Törlés:**
+*   **Törlése:**
 *       `az storage blob delete --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --name "DOKUMENTUM"`
