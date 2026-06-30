@@ -18,7 +18,10 @@ A dokumentáció az **Azure CLI** alapvető használatát, környezeti beállít
 ## 📂 Erőforráscsoportok (Resource Groups)
 
 *   **Meglévő erőforráscsoportok listázása:** `az group list --output table`
-*   **Új erőforráscsoport létrehozása:** `az group create --name "EROFORRASCSOPORT_NEVE" --location "pl: swedencentral"`  
+*   **Új erőforráscsoport létrehozása:** `az group create --name "EROFORRASCSOPORT_NEVE" --location "pl: swedencentral"`   
+
+<img width="1383" height="733" alt="image" src="https://github.com/user-attachments/assets/b421e638-37c7-41bf-9a0c-9298d73f322c" />
+
 
 ---
 
@@ -38,6 +41,7 @@ az storage account list --query "[].name" --output table
 ```bash
 az storage container create --name "TAROLO_NEVE" --account-name "TARFIok_NEVE"
 ```
+<img width="1190" height="464" alt="image" src="https://github.com/user-attachments/assets/195d49a6-6deb-4333-8a6c-f2f56a15c8e4" />
 
 ---
 
