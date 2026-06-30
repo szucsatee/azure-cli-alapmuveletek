@@ -48,10 +48,10 @@ az storage container create --name "TAROLO_NEVE" --account-name "TARFIok_NEVE"
 ## 💾 Blob fájlműveletek (Feltöltés, Letöltés, Törlés)
 
 *   **Új elem feltöltése:**
-*       `az storage blob upload --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --name "DOKUMENTUM" --file "helyi_elérési_út" --auth-mode login`
+*       az storage blob upload --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --name "DOKUMENTUM" --file "helyi_elérési_út" --auth-mode login
 *   **Elemek listázása:**
-*       `az storage blob list --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --output table`
+*       az storage blob list --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --output table
 *   **Letöltése:**
-*       `az storage blob download --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --name "DOKUMENTUM" --file "helyi_cél"`
+*       az storage blob download --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --name "DOKUMENTUM" --file "helyi_cél"
 *   **Törlése:**
-*       `az storage blob delete --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --name "DOKUMENTUM"`
+*       az storage blob delete --container-name "TAROLO_NEVE" --account-name "TARFIok_NEVE" --name "DOKUMENTUM"
