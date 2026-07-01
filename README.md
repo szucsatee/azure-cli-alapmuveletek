@@ -1,24 +1,42 @@
-# ☁️ Azure CLI Alapműveletek
+# ☁️ Azure CLI alapműveletek
 
-A dokumentáció az **Azure CLI** alapvető használatát, környezeti beállításait és a legfontosabb felhőalapú parancsokat mutatja be, írja le.
+A dokumentáció az **Azure CLI** alapvető használatát, környezeti beállításait és a legfontosabb felhőalapú parancsokat mutatja be.
 
 ---
 
 ## 🔑 Első lépések:
 
-*   **Verzió ellenőrzését így tudod elvégezni:** `az version` vagy `az -v`
+*   **Verzió ellenőrzését így tudod ellenőrízni:** 
+``` bash
+  az version vagy az -v
+```
 *   <img width="805" height="198" alt="image" src="https://github.com/user-attachments/assets/f8ce7e35-064a-43b6-9f83-8ad25e781435" />
 
-*   **Bejelentkezéshez használd ezt:** `az login --tenant "TenantID"`
-*   **Előfizetéseid listázását így csináld:** `az account list -o table`
-*   **Előfizetés váltásához:** `az account set -s "SubscriptionID"' `
+*   **Bejelentkezéshez ezt használd:**  
+```bash
+az login --tenant "TenantID" 
+```
+*   **Előfizetéseid így tdod ellenőrízni:** 
+```bash
+az account list -o table 
+```
+*   **Előfizetés váltásához:** 
+```
+az account set -s "SubscriptionID"
+```
 
 ---
 
 ## 📂 Erőforráscsoportok (Resource Groups)
 
-*   **Meglévő erőforráscsoportok listázása:** `az group list --output table`
-*   **Új erőforráscsoport létrehozása:** `az group create --name "EROFORRASCSOPORT_NEVE" --location "pl: swedencentral"`   
+*   **Meglévő erőforráscsoportok listázása:** 
+  ``` bash
+az group list --output table
+```
+*   **Új erőforráscsoport létrehozása:**
+  ``` bash
+az group create --name "EROFORRASCSOPORT_NEVE" --location "pl: swedencentral"
+```
 
 <img width="1383" height="733" alt="image" src="https://github.com/user-attachments/assets/b421e638-37c7-41bf-9a0c-9298d73f322c" />
 
